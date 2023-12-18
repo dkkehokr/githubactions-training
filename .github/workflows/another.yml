@@ -1,0 +1,12 @@
+name: use another workflow
+
+on: [workflow_dispatch]
+
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Run custom action from antoher
+         uses: sofusalbertsen/custom-action@main
+         with:
+          myInput: joni
